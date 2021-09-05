@@ -1,0 +1,376 @@
+/*
+	Shine by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/* GLOBAL STYLES */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 28px;
+    text-align: center;
+    overflow-x: hidden !important;
+    margin: auto !important;
+}
+
+
+a, a:hover, a:active, a:focus {
+    border: 0 none;
+    outline: 0 none;
+    text-decoration: none;
+}
+
+/* TYPOGRAPHIE */
+
+h1,
+h2 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 62px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* FORM GROUPS */
+
+.form-control {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+	border-radius: 0px;
+    box-shadow: none;
+    height: 57px;
+    padding-left: 20px;
+}
+
+/* CUSTOM CLASSES */
+
+.white-text {
+	color: #fff;
+}
+
+.colored-line-small-center {
+	background: #008ed6;
+	display: block;
+	margin: auto;
+    height: 1px;
+    width: 25%;
+    z-index: 1;
+	margin-bottom: 5px;
+}
+
+.colored-line-right {
+	background: #008ed6;
+	display: block;
+	float: right;
+    height: 1px;
+    width: 165px;
+    z-index: 1;
+}
+
+.button-leweb {
+	background: none repeat scroll 0 0 rgba(22, 182, 234, 0.5);
+    border: 1px solid #fff;
+	color: #fff;
+	border-radius: 0px;
+    box-shadow: none;
+	height: 57px;
+	padding-left: 18px;
+	padding-right: 18px;
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease; 
+}
+
+
+.button-leweb:hover {
+	background: #008ed6;
+}
+
+
+/* SECTIONS */
+
+section {
+	padding: 120px 0px;
+}
+/* HEADER */
+
+#header {
+	background: url(../img/bsbild_fullhd_01.jpg) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	padding: 0px;
+}
+
+#header .container {
+	background: url(../img/body-bg1.png) repeat 0 0;
+	height: 100vh;
+	width: 100% !important;
+	padding: 0px;	
+	z-index: 998;
+}
+
+#header .col-md-8 {
+	top: 20%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 999;
+}
+
+#header .logo {
+	margin-bottom: 15px;
+}
+
+.animation {	width: 100%;
+	bottom: 0;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	text-align:center;
+	text-decoration: none;
+}
+
+#header .fa-angle-down {
+	text-align: center;
+	font-size: 48px;
+	color: #fff;
+	
+	-webkit-animation: leweb_fade_move_down 2s ease-in-out infinite;
+	-moz-animation: leweb_fade_move_down 2s ease-in-out infinite;
+	animation: leweb_fade_move_down 2s ease-in-out infinite;
+   }
+
+
+  
+.main-header__search-form,
+.main-header__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__link {
+    color: var(--light-gray-color);
+    padding: 0 20px;
+    font-size: 106.25%;
+    font-weight: 500;
+    transition: color 0.1s ease, text-shadow 0.1s ease, opacity 0.5s ease;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.main-header__link:hover {
+    opacity: 1;
+}
+
+.main-header__search-form {
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-header__search-form *:not(input) {
+    transition: color 0.1s ease, text-shadow 0.1s ease, opacity 0.5s ease;
+}
+
+.main-header__search-form input {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: var(--width);
+    border: none;
+    padding: 0 32px 0 26px;
+    position: relative;
+    color: var(--white-color);
+    font: 400 13.3333px Arial;
+    background: none;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.main-header__search-underline {
+    margin-top: 17px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 2px solid var(--light-gray-color);
+    opacity: 0;
+}
+
+.main-header__search-form i {
+    color: var(--light-gray-color);
+    position: absolute;
+}
+
+.main-header__search-form .fa-search {
+    left: 0;
+    color: var(--light-gray-color);
+    opacity: 0.5;
+}
+
+.main-header__search-form .fa-google {
+    right: 14px;
+    opacity: 0;
+}
+
+.main-header__search-form .fa-chevron-down {
+    right: 0;
+    opacity: 0;
+}
+
+.main-header__search-form:hover *:not(input, .fa-search) {
+    opacity: 0.5;
+}
+
+.main-header__search-form:hover .fa-search {
+    opacity: 1;
+}
+
+.main-header__search-form:focus-within .fa-search,
+.main-header__search-form:focus-within .main-header__search-underline,
+.main-header__search-form:focus-within .fa-google,
+.main-header__search-form:focus-within .fa-chevron-down {
+    opacity: 1;
+}
+
+.main-header__column:last-child:hover .main-header__metric-item {
+    opacity: 1;
+}
+
+.main-header__metric-item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    color: var(--white-color);
+    font-size: 0.73rem;
+    cursor: pointer;
+}
+
+.main-header__metric-item:first-child {
+    padding: 16px 10px 10px;
+    opacity: 0;
+    transition: color 0.1s ease, text-shadow 0.1s ease, opacity 0.5s ease;
+}
+
+.main-header__metric-item:first-child i {
+    font-size: 16px;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.main-header__metric-item:last-child {
+    padding: 11px 17px 10px 10px;
+}
+
+.main-header__metric-stat {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.main-header__weather-icon {
+    margin-right: 4px;
+}
+
+.main-header__metric-stat-number {
+    font-size: 26px;
+}
+
+.main-header__metric-stat-degree {
+    font-size: 27px;
+}
+
+/* 날씨 장소 */
+/* fallback */
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v99/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+  }
+  
+
+  
+
+.todo__input{
+	width: 150px;
+	height: 30px;
+	border: none;
+	border-bottom: solid 1px rgb(255 247 247);
+	background-color: transparent;
+  }
+  
+  .todo__input {
+	font-size: 20px;
+    line-height: 42px;
+   
+ 
+	width: 150px;
+	height: 30px;
+	border: none;
+	border-bottom: solid 1px rgb(250 255 197 / 46%);
+	background-color: transparent;
+  }
+
+
